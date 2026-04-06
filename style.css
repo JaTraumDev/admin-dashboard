@@ -14,16 +14,13 @@ body {
 }
 
 #dashboard {
-	background-color: blue;
+	background-color: rgb(25 146 212);
 	grid-area: dashboard;
 }
 
-#searchbar {
-	background-color: red;
-}
-
 header {
-	background-color: yellow;
+	background-color: white;
+	box-shadow: 0 2px 12px #00000038;
 }
 
 main {
