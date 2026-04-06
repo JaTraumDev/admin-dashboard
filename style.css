@@ -1,0 +1,29 @@
+body {
+	height: 100vh;
+	margin: 0;
+}
+
+#container {
+	height: 100%;
+	display: grid;
+	grid-template-columns: minmax(300px, 1fr) 4fr;
+	grid-template-rows: 1fr 5fr;
+	grid-template-areas: "dashboard header" "dashboard main";
+}
+
+#dashboard {
+	background-color: blue;
+	grid-area: dashboard;
+}
+
+#searchbar {
+	background-color: red;
+}
+
+header {
+	background-color: yellow;
+}
+
+main {
+	grid-area: main;
+}
