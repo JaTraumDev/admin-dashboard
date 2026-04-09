@@ -2,7 +2,6 @@
 
 body {
 	height: 100vh;
-	max-width: 1440px;
 	margin: 0 auto;
 	background-color: rgb(226 232 240);
 	font-family: "Be Vietnam Pro";
@@ -11,18 +10,58 @@ body {
 #container {
 	height: 100%;
 	display: grid;
-	grid-template-columns: 300px 1fr;
+	grid-template-columns: auto 1fr;
 	grid-template-rows: 1fr 5fr;
 	grid-template-areas: "dashboard header" "dashboard main";
 }
 
 #dashboard {
+	font-size: clamp(10px, 0.75vw, 20px);
 	background-color: rgb(25 146 212);
-	grid-area: dashboard;
+}
+
+ul:first-of-type {
+	margin-top: 2em;
+}
+
+ul {
+	padding: 0;
+	margin-right: 4em;
+}
+
+ul + ul {
+	font-size: 1em;
+	margin-top: 4em;
+}
+
+li {
+	list-style-type: none;
+}
+
+li + li {
+	margin-top: 1em;
+}
+
+li a {
+	font-size: 1.75em;
+	color: white;
+	margin-left: 1em;
+
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+a .material-symbols-outlined {
+	font-size: 1.25em;
 }
 
 header {
-	background-color: white;
 	box-shadow: 0 2px 12px #00000038;
 
 	display: grid;
