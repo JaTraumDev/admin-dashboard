@@ -62,7 +62,7 @@ a .material-symbols-outlined {
 }
 
 header {
-	box-shadow: 0 2px 12px #00000038;
+	box-shadow: 0px 4px 13px 0px #000000a8;
 
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
