@@ -18,11 +18,10 @@ header {
 #searchbar,
 #profile {
 	background-color: white;
+	padding-inline: 3em;
 }
 
 #searchbar {
-	padding-inline: 3em;
-
 	display: grid;
 	grid-template-columns: 1fr auto;
 	align-items: center;
