@@ -7,6 +7,74 @@ body {
 	font-family: "Be Vietnam Pro";
 }
 
+header {
+	box-shadow: 0px 4px 13px 0px #000000a8;
+
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: "searchbar" "profile";
+}
+
+#searchbar,
+#profile {
+	background-color: white;
+}
+
+#searchbar {
+	padding-inline: 3em;
+
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	gap: 3em;
+}
+
+#searchbar div:first-of-type {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 32px;
+	gap: 1rem;
+	align-items: center;
+}
+
+#searchbar span,
+#searchbar p {
+	font-size: 2em;
+}
+
+#searchbar .material-symbols-outlined {
+	font-variation-settings: "wght" 500;
+}
+
+#searchbar p {
+	color: black;
+	font-weight: 450;
+	font-size: 1.5em;
+}
+input[type="search"] {
+	border-style: none;
+	background-color: #ededed;
+	height: 3em;
+	border-radius: 3em;
+}
+
+#searchbar div:nth-child(2) {
+	padding-inline: 2em;
+}
+
+#searchbar div:nth-child(2),
+#searchbar div:nth-child(2) a {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 2em;
+	align-items: center;
+}
+
+a img {
+	width: 3em;
+	border-radius: 50%;
+}
+
 #container {
 	height: 100%;
 	display: grid;
@@ -43,7 +111,7 @@ li + li {
 }
 
 li a {
-	font-size: 1.75em;
+	font-size: 1.5em;
 	color: white;
 	margin-left: 1em;
 
@@ -59,22 +127,6 @@ a {
 
 a .material-symbols-outlined {
 	font-size: 1.25em;
-}
-
-header {
-	box-shadow: 0px 4px 13px 0px #000000a8;
-
-	display: grid;
-	grid-template-rows: repeat(2, 1fr);
-	grid-template-areas: "searchbar" "profile";
-}
-
-#searchbar {
-	background-color: red;
-}
-
-#profile {
-	background-color: blue;
 }
 
 main {
