@@ -20,6 +20,10 @@ header {
 	grid-template-areas: "searchbar" "profile";
 }
 
+p{
+	color: black;
+}
+
 #searchbar,
 #profile {
 	background-color: white;
