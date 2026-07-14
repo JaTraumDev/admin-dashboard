@@ -85,7 +85,7 @@ a img {
 
 #profile{
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1.3fr 0.7fr;
 
 }
 
@@ -109,6 +109,26 @@ a img {
 
 #welcome-message p:first-child{
 	margin-bottom: 0;
+}
+
+#profile-buttons{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: 0.4fr;
+	gap: 2em;
+	align-content: center;
+	justify-content: center;
+}
+
+#profile-buttons button{
+	width: 7em;
+	height: 3em;
+	border-style: none;
+	border-radius: 1em;
+	background-color: var(--main-color);
+	color: white;
+	font-size: 1em;
+	font-weight: 600;
 }
 
 #container {
