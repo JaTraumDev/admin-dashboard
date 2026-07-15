@@ -2,6 +2,7 @@
 
 :root {
 	--main-color: #f57e42;
+	--secondary-color: #A142F5;
 }
 
 
@@ -22,6 +23,11 @@ header {
 
 p{
 	color: black;
+}
+
+h2{
+	margin-block: 0.5em;
+	margin-bottom: 0;
 }
 
 #searchbar,
@@ -195,8 +201,41 @@ main {
 }
 
 #projects{
-	background-color: blue;
 	grid-row: 1 / -1;
+}
+
+#project-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 2em;
+
+}
+
+.project{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	background-color: white;
+	padding: 1.75em;
+
+	border-inline-start: solid var(--secondary-color);
+	border-width: 1em;
+	border-radius: 0.5rem;
+
+	box-shadow: 0rem 0.25rem 0.5rem 0px #00000026;
+}
+
+.project p{
+	margin-bottom: 0.5em;
+	margin-top: 2px;
+	padding-top: 0;
+}
+
+.project-settings{
+	text-align: right;
+	margin-top: 3em;
 }
 
 #announcements{
