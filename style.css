@@ -14,11 +14,11 @@ body {
 }
 
 header {
-	box-shadow: -2px 1px 20px 0px #00000024;
-
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-areas: "searchbar" "profile";
+
+	box-shadow: -2px 1px 20px 0px #00000024;
 }
 
 p{
@@ -48,6 +48,8 @@ hr{
 #profile {
 	background-color: white;
 	padding-inline: 3em;
+
+	padding-block: 1em;
 }
 
 #searchbar {
@@ -216,6 +218,8 @@ main {
 
 #projects{
 	grid-row: 1 / 3;
+	display: grid;
+	grid-template-rows: auto 1fr;
 }
 
 #project-container{
@@ -252,11 +256,9 @@ main {
 	margin-top: 3em;
 }
 
-#announcements{
-}
 
 #announcement-container{
-	font-size: 0.8em;
+	font-size: 0.85em;
 
 	background-color: white;
 	padding: 3em;
@@ -265,6 +267,34 @@ main {
 	box-shadow: 0rem 0.25rem 0.5rem 0px #00000026;
 }
 
+#trending-container{
+	background-color: white;
+	padding: 3em;
+	border-radius: 1em;
+
+	box-shadow: 0rem 0.25rem 0.5rem 0px #00000026;
+}
+
+.trending-profile{
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1em;
+	align-items: center;
+}
+
+.trending-profile + .trending-profile{
+	margin-top: 1em;
+}
+
+.trending-profile img{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+
+#announcements,
 #trending {
-	background-color: red;
+	display: grid;
+	grid-template-rows: auto 1fr;
 }
